@@ -65,6 +65,21 @@ Navigate into the `names` directory. Here you will find two text files containin
 Six seconds is an eternity so you've been tasked with speeding up the code. Your goal is to use one of the data structures we built out over the course of this week in order to optimize and improve on the runtime so that it's more efficient than O(n²).
 
 A follow-up question to think about: _*once you've used one of the data structures we implemented over the course of the week*_ in order to improve the runtime of the implementation, what other data structures (including ones from Python's standard library) are also possible candidates for improving the runtime of the implementation?
+  answer: Peephole Optimization technique, Peephole optimization is a method that optimizes a small segment of instructions from a program or a section of the program. This segment is then known as <Peephole> or <Window>. It helps in spotting the instructions that you can replace with a minified version.
+
+Using generators and keys for sorting:
+
+Generators are a great tool for memory optimization. They facilitate to create functions that can return one item (the iterator) at a time instead of returning all at once. A good example is when you’re creating a huge list of numerals and summing them together.
+Also, while sorting items in a list, you should use keys and the default <sort()> method to the extent possible. In the below example, check that we are sorting the list as per the index selected as part of the key argument. The same approach, you can use with strings.
+
+
+
+Optimizing loops:
+Most programming language stress upon the need to optimize loops. In Python, we do have a way of turning loops perform faster. Consider a method which programmers often miss is preventing the use of dots within a loop.
+
+In Python, you’ll see a couple of building blocks that support looping. Out of these few, the use of “for” loop is prevalent. While you might be fond of using loops but they come at a cost. The Python engine spends substantial efforts in interpreting the for loop construct. Hence, it’s always preferable to replace them with built-in constructs like Maps.
+
+Next, the level of code optimization also depends on your knowledge of Python built-in features. In the below examples, we’ll try to explain how different constructs can help in optimizing loops.
 
 #### Task 3. Reverse a Linked List
 
